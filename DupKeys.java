@@ -4,7 +4,6 @@ import java.util.Set;
 
 class DupKeys{
     public static void main(String[] args) {
-        //ArrayList<String> names = new ArrayList<>();
         ArrayList<String> names = new ArrayList<>();
         names.add("cat");
         names.add("dog");
