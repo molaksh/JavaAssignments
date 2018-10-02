@@ -24,7 +24,7 @@ class CountChar{
 
         System.out.println("\nthe size of the list is "+clist.size());
 
-    }
+    } 
 
 
 }
