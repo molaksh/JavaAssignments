@@ -3,3 +3,12 @@ class Driver{
         
     }
 }
+class Vehicle{
+
+}
+class Truck extends Vehicle{
+
+}
+class Car extends Vehicle{
+
+}
