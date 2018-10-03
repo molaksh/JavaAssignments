@@ -2,6 +2,16 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Two",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "Two",
+            "args": ""
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Details",
             "request": "launch",
             "cwd": "${workspaceFolder}",
