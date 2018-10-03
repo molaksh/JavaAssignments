@@ -10,7 +10,10 @@ class Two{
     }
 }
 interface parent{
-     int Add(int a, int b);
+    //1. with default keyword we can define methods in interfaces
+    default int Add(int a, int b){
+        System.out.println("whatever");return 1;
+    }
      int Subtract(int a, int b);
      int Multiply(int a, int b);
      int Divide(int a, int b);
@@ -19,7 +22,12 @@ interface parent{
      long Factorial(int number);
 }
 class child implements parent{
+    //2. in updated version of java, it is not required to define 
+    //all the methods of interface in the implementing class 
 
+    //3. same methods can be defined in interfaces (default key word) and
+    //implementing classes. method in the interface will be overridden. 
+    //meaning, function call will run the method from implemented class 
     public int Add(int a, int b){
         int c = a+b;
         return c;
