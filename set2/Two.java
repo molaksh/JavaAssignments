@@ -10,13 +10,13 @@ class Two{
     }
 }
 interface parent{
-    public int Add(int a, int b);
-    public int Subtract(int a, int b);
-    public int Multiply(int a, int b);
-    public int Divide(int a, int b);
-    public double SquareRoot(float number);
-    public double SquareRoot(int number);
-    public long Factorial(int number);
+     int Add(int a, int b);
+     int Subtract(int a, int b);
+     int Multiply(int a, int b);
+     int Divide(int a, int b);
+     double SquareRoot(float number);
+     double SquareRoot(int number);
+     long Factorial(int number);
 }
 class child implements parent{
 
