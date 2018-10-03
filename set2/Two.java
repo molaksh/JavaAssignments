@@ -1,12 +1,78 @@
+import java.util.Scanner;
+
+
 class Two{
     public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
         child c = new child();
 
-        System.out.println(c.Add(1, 2));  
-        System.out.println(c.Factorial(12));
-        System.out.println(c.SquareRoot(4.12f)); 
-        System.out.println(c.SquareRoot(4));
+        System.out.println("Select Operation\n1.Addition\n2.Sub\n3.Muliply\n4.Divide\n5.Square Root(Float)\n6.Square Root (int)\n7.Factorial");
+        int i = s.nextInt();
 
+        switch(i){
+            case 1:{
+                int a = getIntInput();
+                int b = getIntInput();
+                int r = c.Add(a,b);
+                System.out.println("Result = "+r);
+                break;
+            } 
+            case 2:{
+                int a = getIntInput();
+                int b = getIntInput();
+                int r = c.Subtract(a,b);
+                System.out.println("Result = "+r);break;
+            }
+            case 3:{
+                int a = getIntInput();
+                int b = getIntInput();
+                int r = c.Multiply(a,b);
+                System.out.println("Result = "+r);break;
+            }
+            case 4:{
+                int a = getIntInput();
+                int b = getIntInput();
+                int r = c.Divide(a,b);
+                System.out.println("Result = "+r);break;
+            }
+            case 5:{
+                float a = getFloatinput();
+                double r = c.SquareRoot(a);
+                System.out.println("Result = "+r);break;
+            }
+            case 6:{
+                int a = getIntInput();
+                double r = c.SquareRoot(a);
+                System.out.println("Result = "+r);break;
+            }
+            case 7:{
+                int a = getIntInput();
+                long r = c.Factorial(a);
+                System.out.println("Result = "+r);break;
+            }
+
+            default:{
+                System.out.println("you didnt enter relevant value!! BYE!!");break;
+            }
+        }
+        
+
+        
+
+    }
+    static int getIntInput(){
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter number");
+        int a = s.nextInt();
+        //s.close();
+        return a;
+    }
+
+    static float getFloatinput(){
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter a float value");
+        float a = s.nextFloat();
+        return a;
     }
 }
 interface parent{
