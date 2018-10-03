@@ -7,6 +7,9 @@ class Vehicle{
     void acceleration(){
         System.out.println("can accelerate");
     }
+    void acceleration(int i){
+        System.out.println("accelerating to "+i+"mph");
+    }
 }
 class Car extends Vehicle{
     public boolean wheels = true;
@@ -18,6 +21,8 @@ class SportsCar extends Car{
     void acceleration(){
         System.out.println("maximum acceleration");
     }
+
+    
     boolean getWheels(){
         return wheels;
     }
@@ -50,7 +55,9 @@ class Driver{
         Vehicle b3 = new CargoShip();
 
         c1.getMessage();
+        c1.acceleration(80);
         c1.acceleration();
+
         if(c.wheels){System.out.println("I have wheels");}
         //if(){System.out.println("I have wheels");}
         System.out.println(c1.vehicle);
