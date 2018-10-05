@@ -1,3 +1,4 @@
+package Assignments;
 import java.util.Scanner;
 class Grade{
     public static void main(String[] args) {

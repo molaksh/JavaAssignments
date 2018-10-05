@@ -1,3 +1,4 @@
+package set2;
 class Vehicle{
     public String vehicle = "Vehicle";
     void getMessage(){

@@ -1,3 +1,6 @@
+package Assignments;
+
+
 import java.util.Scanner;
 
 class BuildPali{

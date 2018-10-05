@@ -1,3 +1,4 @@
+package set2;
 class Four{
     public static void main(String[] args) {
         Rock r = new Rock();
@@ -15,19 +16,8 @@ class Four{
         
     }
 }
-public abstract class Wrestler{
-    
-
-    public int salary(int hours, int sph){
-        int s = hours*sph;
-        return s;
-    }
-
-    public abstract void themeMusic();
-    public abstract void finisher();
 
 
-}
 
 class Rock extends Wrestler{
     int salaryPerHour = 1000;

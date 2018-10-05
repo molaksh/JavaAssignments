@@ -1,7 +1,9 @@
-class Driver{
+package set2;
+
+class Driver1{
     public static void main(String[] args) {
-        Car c = new Car();
-        Truck t = new Truck();
+        Car1 c = new Car1();
+        Truck1 t = new Truck1();
 
         c.start();
         c.setSpeed();
@@ -18,13 +20,9 @@ class Driver{
         t.openTailgate();
         t.closeTailgate();
         t.stop();
-
-
-
-
     }
 }
-class Vehicle{
+class Vehicle1{
     
     int speed;
 
@@ -58,7 +56,7 @@ class Vehicle{
 
 }
 
-class Truck extends Vehicle{
+class Truck1 extends Vehicle1{
     public void openTailgate(){
         System.out.println("opening Tailgate");
     }
@@ -67,7 +65,7 @@ class Truck extends Vehicle{
     }
 
 }
-class Car extends Vehicle{
+class Car1 extends Vehicle1{
     final int topSpeed = 75;
     public void setSpeed(){
         while(speed<topSpeed){
