@@ -22,6 +22,7 @@ class Driver1{
         t.stop();
     }
 }
+
 class Vehicle1{
     
     int speed;
