@@ -16,6 +16,22 @@ class Six{
         System.out.println("Price = "+ price);
         System.out.println("Sales Tax = "+ salesTaxAmount);
         System.out.println("Total Price = "+finalAmount);
+
+        System.out.println("Enter the number of hours");
+        double hoursOfWork = s.nextDouble();
+        System.out.println("Enter the base pay rate");
+        double basePayRate = s.nextDouble();
+        
+        if(hoursOfWork<=40){
+            double totalPayDue = hoursOfWork * basePayRate;
+        }else{
+            double totalPayDue = hoursOfWork * (basePayRate/2);
+
+        }
+        
+        System.out.println("The total pay for the week is "+ totalPayDue );
+
+
     }
     
 
