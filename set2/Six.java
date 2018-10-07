@@ -6,6 +6,7 @@ import java.util.Scanner;
 class Six{
     public static void main(String[] args) {
         double salesTax = 8.25/100;
+        double totalPayDue;
         Scanner s = new Scanner(System.in);
 
         System.out.println("Enter the price: ");
@@ -23,9 +24,9 @@ class Six{
         double basePayRate = s.nextDouble();
         
         if(hoursOfWork<=40){
-            double totalPayDue = hoursOfWork * basePayRate;
+            totalPayDue = hoursOfWork * basePayRate;
         }else{
-            double totalPayDue = hoursOfWork * (basePayRate/2);
+            totalPayDue = hoursOfWork * (basePayRate/2);
 
         }
         
