@@ -41,7 +41,9 @@ class Luxury extends Car{
 class SailingBoat extends Boat{}
 class MotorBoat extends Boat{}
 class CargoShip extends Boat{}
-class Driver{
+
+
+public class Three{
     public static void main(String[] args) {
 
         Car c = new Car();

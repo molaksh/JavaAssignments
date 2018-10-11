@@ -10,7 +10,7 @@ class GuessingGame{
         //new Random().nextInt((max - min) + 1) + min
         //int i = rand.nextInt(1000 - 1)+1)+1
         int randInt = rand.nextInt(1000)+1;
-        System.out.println("random ="+randInt);
+//        System.out.println("random ="+randInt);
 
        
         int count = 0;
