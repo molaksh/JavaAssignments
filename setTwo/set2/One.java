@@ -1,6 +1,6 @@
 package set2;
 
-class Driver1{
+class One{
     public static void main(String[] args) {
         Car1 c = new Car1();
         Truck1 t = new Truck1();
