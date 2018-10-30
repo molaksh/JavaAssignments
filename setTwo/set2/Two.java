@@ -77,7 +77,7 @@ class Two{
     }
 }
 interface parent{
-    //1. with default keyword we can define methods in interfaces
+    //1. with default keyword we can define methods in interfaces - new version of java
     default int Add(int a, int b){
         System.out.println("whatever");return 1;
     }
@@ -89,9 +89,10 @@ interface parent{
      long Factorial(int number);
 }
 class child implements parent{
-    //2. in updated version of java, it is not required to define 
-    //all the methods of interface in the implementing class 
-
+	//2. Functions that are not defined in the interface must be defined in 
+	//the implemented class
+	
+	
     //3. same methods can be defined in interfaces (default key word) and
     //implementing classes. method in the interface will be overridden. 
     //meaning, function call will run the method from implemented class 
